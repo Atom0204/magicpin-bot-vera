@@ -985,8 +985,9 @@ def run_server(host: str = "0.0.0.0", port: int = 8080):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Run Vera candidate bot server")
+    default_port = int(os.environ.get("PORT", 8080))
     parser.add_argument("--host", default="0.0.0.0", help="Bind host (default: 0.0.0.0)")
-    parser.add_argument("--port", type=int, default=8080, help="Bind port (default: 8080)")
+    parser.add_argument("--port", type=int, default=default_port, help=f"Bind port (default: {default_port})")
     parser.add_argument("--preload", action="store_true", help="Preload local dataset directory")
     args = parser.parse_args()
 
