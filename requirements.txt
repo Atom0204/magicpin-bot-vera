@@ -1,0 +1,3 @@
+# magicpin AI Challenge — Vera Merchant Assistant Bot
+# bot.py runs entirely on Python 3 standard library (http.server, urllib, json, threading)
+# No external pip dependencies are required for runtime.
